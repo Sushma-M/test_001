@@ -1,0 +1,23 @@
+{
+  "username" : "root",
+  "password" : "7b6a43524a2621157e686d791a50777e47367b6a3120",
+  "url" : "jdbc:mysql://ec2-54-87-2-36.compute-1.amazonaws.com:3306/testDB009?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "testDB009",
+  "packageName" : "com.test_001.testdb009",
+  "dbType" : "MySQL",
+  "host" : "ec2-54-87-2-36.compute-1.amazonaws.com",
+  "dbName" : "testDB009",
+  "port" : "3306",
+  "schemaName" : null,
+  "tableFilter" : [ "TABLE1", "TABLE2" ],
+  "schemaFilter" : [ ".*" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "readOnly" : false
+}

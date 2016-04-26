@@ -1,4 +1,20 @@
 {
+  "appNotification" : {
+    "_id" : "wm-appErrorHandler-wm.NotificationVariable-1454664620943",
+    "name" : "appNotification",
+    "owner" : "App",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "list"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "list"
+    } ],
+    "operation" : "toast"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",
@@ -19,23 +35,175 @@
     "isList" : false,
     "saveInPhonegap" : false
   },
-  "appNotification": {
-      "_id": "wm-appErrorHandler-wm.NotificationVariable-1454664620943",
-      "name": "appNotification",
-      "owner": "App",
-      "category": "wm.NotificationVariable",
-      "dataBinding": [
-        {
-          "target": "class",
-          "value": "Error",
-          "type": "list"
-        },
-        {
-          "target": "toasterPosition",
-          "value": "bottom right",
-          "type": "list"
-        }
-      ],
-      "operation": "toast"
-    }
+  "TestDB009Table1Data" : {
+    "_id" : "wm-TestDB009Table1Data-wm.LiveVariable-1461651104887",
+    "name" : "TestDB009Table1Data",
+    "owner" : "App",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ ],
+    "operation" : "read",
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "Table1",
+    "isList" : true,
+    "saveInPhonegap" : false,
+    "firstRow" : 0,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "liveSource" : "testDB009",
+    "ignoreCase" : false,
+    "matchMode" : "start",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "id",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "ID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "column2",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN2",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "Table1",
+      "fullyQualifiedName" : "com.test_001.testdb009.Table1",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "id" ]
+    },
+    "isDefault" : true,
+    "tableName" : "TABLE1",
+    "tableType" : "TABLE",
+    "dbSystem" : "MySQL",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "package" : "com.test_001.testdb009.Table1"
+  },
+  "TestDB009Table2Data" : {
+    "_id" : "wm-TestDB009Table2Data-wm.LiveVariable-1461651104894",
+    "name" : "TestDB009Table2Data",
+    "owner" : "App",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ ],
+    "operation" : "read",
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "Table2",
+    "isList" : true,
+    "saveInPhonegap" : false,
+    "firstRow" : 0,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "liveSource" : "testDB009",
+    "ignoreCase" : false,
+    "matchMode" : "start",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "table1",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN3",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : true,
+        "relatedTableName" : "TABLE1",
+        "relatedEntityName" : "Table1",
+        "relatedFieldName" : "table1.id",
+        "targetTable" : "TABLE1",
+        "scale" : 0,
+        "columns" : [ {
+          "fieldName" : "id",
+          "type" : "string",
+          "fullyQualifiedType" : "string",
+          "columnName" : "ID",
+          "isPrimaryKey" : true,
+          "notNull" : true,
+          "length" : 255,
+          "precision" : 19,
+          "generator" : "assigned",
+          "isRelated" : false,
+          "scale" : 0
+        }, {
+          "fieldName" : "column2",
+          "type" : "string",
+          "fullyQualifiedType" : "string",
+          "columnName" : "COLUMN2",
+          "isPrimaryKey" : false,
+          "notNull" : false,
+          "length" : 255,
+          "precision" : 19,
+          "generator" : "assigned",
+          "isRelated" : false,
+          "scale" : 0
+        } ]
+      }, {
+        "fieldName" : "id",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "ID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "column2",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN2",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "Table2",
+      "fullyQualifiedName" : "com.test_001.testdb009.Table2",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "id" ]
+    },
+    "isDefault" : true,
+    "tableName" : "TABLE2",
+    "tableType" : "TABLE",
+    "dbSystem" : "MySQL",
+    "properties" : [ "table1" ],
+    "relatedTables" : [ {
+      "columnName" : "table1",
+      "relationName" : "table1",
+      "type" : "Table1",
+      "watchOn" : "TestDB009Table1Data",
+      "package" : "com.test_001.testdb009.Table2"
+    } ],
+    "package" : "com.test_001.testdb009.Table2"
+  }
 }
