@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- This is a Studio Managed File. If you customize this file by hand, use 
+<!-- This is a Studio Managed File. If you customize this file by hand, use
 	of Studio Security tooling may revert your customizations.You can do security customization in project-security.xml-->
 
 <beans xmlns="http://www.springframework.org/schema/beans"
