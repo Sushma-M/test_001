@@ -135,6 +135,7 @@
         "relatedTableName" : "TABLE1",
         "relatedEntityName" : "Table1",
         "relatedFieldName" : "table1.id",
+        "isList" : false,
         "targetTable" : "TABLE1",
         "scale" : 0,
         "columns" : [ {
